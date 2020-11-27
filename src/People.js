@@ -1,14 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react' // importing the hook
 
 function People() {
-    const [name, setName] = useState("Sergey")
-    const [age, setAge] = useState(72)
+    const [name, setName] = useState("Sergey") // setting initial variable, method to change variable value, and using useState to set starting value in state
+    const [age, setAge] = useState(72) // setting initial variable, method to change variable value, and using useState to set starting value in state
 
     const toggleName = () => {
+        // updating value of name in state
         name === "Sergey" ? setName("Vlad") : setName("Sergey")
     }
 
     const getOlder = () => {
+        // updating value of age in state
         setAge(age + 1)
     }
 
@@ -24,25 +26,3 @@ function People() {
 }
 
 export default People
-
-
-
-
-// import React, { Component } from 'react'
-
-// export default class People extends Component {
-//     constructor(props){
-//         super(props)
-
-//         this.state = {
-
-//         }
-//     }
-//     render() {
-//         return (
-//             <div>
-                
-//             </div>
-//         )
-//     }
-// }
